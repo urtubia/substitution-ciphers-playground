@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    title="Caesar Cipher Playground"
+    link(rel='stylesheet', href='./assets/styles.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700',rel='stylesheet',type='text/css')
+    script(src='https://code.jquery.com/jquery-1.11.2.js')
+    script(src='./assets/caesar.js')
+  body
+    h1 Caesar Cipher Playground
+    div
+      div#editabletitle Plain Text
+      section#plaintext.editable(contenteditable=true)
+
+    div
+      div Shift Value
+        section#shiftvalue.editable(contenteditable=true)
+
+    canvas#visualization
+
+    div
+      div#editabletitle Cipher Text
+      section#ciphertext.editable(contenteditable=true)

@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title="Rot13 Playground"
+    link(rel='stylesheet', href='./assets/styles.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700',rel='stylesheet',type='text/css')
+    script(src='https://code.jquery.com/jquery-1.11.2.js')
+    script(src='./assets/rot13.js')
+  body
+    h1 Rot13 Playground
+    div
+      div#editabletitle Plain Text
+      section#plaintext.editable(contenteditable=true) Type your plaintext here
+
+    canvas#visualization
+
+    div
+      div#editabletitle Cipher Text
+      section#ciphertext.editable(contenteditable=true)

@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    title="Vigenere Cipher Playground"
+    link(rel='stylesheet', href='./assets/styles.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700',rel='stylesheet',type='text/css')
+    script(src='https://code.jquery.com/jquery-1.11.2.js')
+    script(src='./assets/vigenere.js')
+  body
+    h1 Vigenere Cipher Playground
+    div
+      div.editabletitle Plain Text
+      section#plaintext.editable(contenteditable=true)
+
+    div
+      div.editabletitle Key
+      section#vigenerekey.editable(contenteditable=true)
+
+      div.editabletitle Encrypt
+          input#encryptcheckbox(type='checkbox' name='Encrypt', checked)
+
+    canvas#visualization
+
+    div
+      div.editabletitle Cipher Text
+      section#ciphertext.editable(contenteditable=true)
