@@ -5,15 +5,11 @@ html(lang="en")
     link(rel='stylesheet', href='./assets/styles.css')
     link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700',rel='stylesheet',type='text/css')
     script(src='https://code.jquery.com/jquery-1.11.2.js')
-    script(src='./assets/scripts.js')
   body
     h1 Substitution cipher playground
-    div
-      div#editabletitle Plain Text
-      section#plaintext.editable(contenteditable=true)
-
-    canvas#visualization
-
-    div
-      div#editabletitle Cipher Text
-      section#ciphertext.editable(contenteditable=true)
+    p
+      a(href="./rot13.html") Rot13
+    p
+      a(href="./caesar.html") Caesar
+    p
+      a(href="./vigenere.html") Vigenere
